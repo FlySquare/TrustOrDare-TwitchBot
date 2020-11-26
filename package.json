@@ -1,0 +1,22 @@
+{
+  "name": "trustordare-twitchbot",
+  "version": "1.0.0",
+  "description": "a twich bot for streamers by Umut Can Arda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlySquare/TrustOrDare-TwitchBot.git"
+  },
+  "author": "Umut Can Arda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlySquare/TrustOrDare-TwitchBot/issues"
+  },
+  "homepage": "https://github.com/FlySquare/TrustOrDare-TwitchBot#readme",
+  "dependencies": {
+    "tmi.js": "^1.5.0"
+  }
+}
