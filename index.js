@@ -8,6 +8,7 @@ var p1 = 0;
 var p2 = 0;
 var p3 = 0;
 var p4 = 0;
+
 const options = {
     options: {
       debug: true
@@ -76,6 +77,8 @@ client.on('connected', function (address, port) {
 });
 
    client.on('chat', (channel, user, message, self) => {
+    var isBroadcaster = channel.replace('#', '') == user.username;
+    console.log(isBroadcaster);
     if(message === "!sec A" || message === "!sec a"){
         p1 = p1 + 1;
         console.log(p1);
