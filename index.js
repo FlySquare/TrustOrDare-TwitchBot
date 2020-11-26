@@ -45,8 +45,6 @@ function random(){
 }
 function questions(){
   if(db >=499){
-  
-
     x1="A- Telefonunda en son aradığın şey neydi?";
     x2="B- Yerden bir şeyi alıp hiç yedin mi?";
     x3="C- Bir gün karşı cins olarak uyanırsan, ilk yapacağın şey nedir?";
@@ -60,13 +58,10 @@ function questions(){
   }
     
 }
-  
   // Edit channel name
   var chnl = "flysquaree";
   // Edit channel name
-
   const client = new tmi.client(options);
-
   client.connect();
   //bağlanma mesajı
 client.on('connected', function (address, port) {
@@ -75,7 +70,6 @@ client.on('connected', function (address, port) {
     setTimeout(random,6000);
    
 });
-
    client.on('chat', (channel, user, message, self) => {
     var isBroadcaster = channel.replace('#', '') == user.username;
     console.log(isBroadcaster);
